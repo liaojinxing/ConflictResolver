@@ -3,7 +3,7 @@
 //  MergePlugin
 //
 //  Created by Jinxing Liao on 09/03/2018.
-//  Copyright © 2018 Linkedin. All rights reserved.
+//  Copyright © 2018 Plugin. All rights reserved.
 //
 
 import Cocoa

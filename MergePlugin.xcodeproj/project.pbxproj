@@ -11,6 +11,11 @@
 		A8678A3920523ABD007EE1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8678A3820523ABD007EE1B2 /* Assets.xcassets */; };
 		A8678A3C20523ABD007EE1B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8678A3A20523ABD007EE1B2 /* MainMenu.xib */; };
 		A8678A4820523ABD007EE1B2 /* MergePluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8678A4720523ABD007EE1B2 /* MergePluginTests.swift */; };
+		A8678A5920523AF3007EE1B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8678A5820523AF3007EE1B2 /* Cocoa.framework */; };
+		A8678A5C20523AF3007EE1B2 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8678A5B20523AF3007EE1B2 /* SourceEditorExtension.swift */; };
+		A8678A5E20523AF3007EE1B2 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8678A5D20523AF3007EE1B2 /* SourceEditorCommand.swift */; };
+		A8678A6320523AF3007EE1B2 /* ConflictResolver.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8678A5620523AF2007EE1B2 /* ConflictResolver.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8678A6920523B5E007EE1B2 /* MergeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8678A6820523B5E007EE1B2 /* MergeCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +26,28 @@
 			remoteGlobalIDString = A8678A3220523ABD007EE1B2;
 			remoteInfo = MergePlugin;
 		};
+		A8678A6120523AF3007EE1B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8678A2B20523ABD007EE1B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8678A5520523AF2007EE1B2;
+			remoteInfo = ConflictResolver;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8678A6720523AF3007EE1B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A8678A6320523AF3007EE1B2 /* ConflictResolver.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A8678A3320523ABD007EE1B2 /* MergePlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MergePlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +59,13 @@
 		A8678A4320523ABD007EE1B2 /* MergePluginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergePluginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8678A4720523ABD007EE1B2 /* MergePluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergePluginTests.swift; sourceTree = "<group>"; };
 		A8678A4920523ABD007EE1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8678A5620523AF2007EE1B2 /* ConflictResolver.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ConflictResolver.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8678A5820523AF3007EE1B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A8678A5B20523AF3007EE1B2 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		A8678A5D20523AF3007EE1B2 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		A8678A5F20523AF3007EE1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8678A6020523AF3007EE1B2 /* ConflictResolver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConflictResolver.entitlements; sourceTree = "<group>"; };
+		A8678A6820523B5E007EE1B2 /* MergeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8678A5320523AF2007EE1B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8678A5920523AF3007EE1B2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +99,8 @@
 			children = (
 				A8678A3520523ABD007EE1B2 /* MergePlugin */,
 				A8678A4620523ABD007EE1B2 /* MergePluginTests */,
+				A8678A5A20523AF3007EE1B2 /* ConflictResolver */,
+				A8678A5720523AF3007EE1B2 /* Frameworks */,
 				A8678A3420523ABD007EE1B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +110,7 @@
 			children = (
 				A8678A3320523ABD007EE1B2 /* MergePlugin.app */,
 				A8678A4320523ABD007EE1B2 /* MergePluginTests.xctest */,
+				A8678A5620523AF2007EE1B2 /* ConflictResolver.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +136,26 @@
 			path = MergePluginTests;
 			sourceTree = "<group>";
 		};
+		A8678A5720523AF3007EE1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8678A5820523AF3007EE1B2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8678A5A20523AF3007EE1B2 /* ConflictResolver */ = {
+			isa = PBXGroup;
+			children = (
+				A8678A5B20523AF3007EE1B2 /* SourceEditorExtension.swift */,
+				A8678A5D20523AF3007EE1B2 /* SourceEditorCommand.swift */,
+				A8678A5F20523AF3007EE1B2 /* Info.plist */,
+				A8678A6020523AF3007EE1B2 /* ConflictResolver.entitlements */,
+				A8678A6820523B5E007EE1B2 /* MergeCommand.swift */,
+			);
+			path = ConflictResolver;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,10 +166,12 @@
 				A8678A2F20523ABD007EE1B2 /* Sources */,
 				A8678A3020523ABD007EE1B2 /* Frameworks */,
 				A8678A3120523ABD007EE1B2 /* Resources */,
+				A8678A6720523AF3007EE1B2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A8678A6220523AF3007EE1B2 /* PBXTargetDependency */,
 			);
 			name = MergePlugin;
 			productName = MergePlugin;
@@ -130,6 +196,23 @@
 			productReference = A8678A4320523ABD007EE1B2 /* MergePluginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A8678A5520523AF2007EE1B2 /* ConflictResolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8678A6420523AF3007EE1B2 /* Build configuration list for PBXNativeTarget "ConflictResolver" */;
+			buildPhases = (
+				A8678A5220523AF2007EE1B2 /* Sources */,
+				A8678A5320523AF2007EE1B2 /* Frameworks */,
+				A8678A5420523AF2007EE1B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConflictResolver;
+			productName = ConflictResolver;
+			productReference = A8678A5620523AF2007EE1B2 /* ConflictResolver.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +232,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = A8678A3220523ABD007EE1B2;
 					};
+					A8678A5520523AF2007EE1B2 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = A8678A2E20523ABD007EE1B2 /* Build configuration list for PBXProject "MergePlugin" */;
@@ -166,6 +253,7 @@
 			targets = (
 				A8678A3220523ABD007EE1B2 /* MergePlugin */,
 				A8678A4220523ABD007EE1B2 /* MergePluginTests */,
+				A8678A5520523AF2007EE1B2 /* ConflictResolver */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +269,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A8678A4120523ABD007EE1B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8678A5420523AF2007EE1B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,6 +301,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8678A5220523AF2007EE1B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8678A5C20523AF3007EE1B2 /* SourceEditorExtension.swift in Sources */,
+				A8678A5E20523AF3007EE1B2 /* SourceEditorCommand.swift in Sources */,
+				A8678A6920523B5E007EE1B2 /* MergeCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = A8678A3220523ABD007EE1B2 /* MergePlugin */;
 			targetProxy = A8678A4420523ABD007EE1B2 /* PBXContainerItemProxy */;
+		};
+		A8678A6220523AF3007EE1B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8678A5520523AF2007EE1B2 /* ConflictResolver */;
+			targetProxy = A8678A6120523AF3007EE1B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -337,14 +447,15 @@
 		A8678A4D20523ABD007EE1B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MergePlugin/MergePlugin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 57Y47U492U;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MergePlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.MergePlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.MergePlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -353,14 +464,15 @@
 		A8678A4E20523ABD007EE1B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MergePlugin/MergePlugin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 57Y47U492U;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MergePlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.MergePlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.MergePlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -376,7 +488,7 @@
 				DEVELOPMENT_TEAM = 57Y47U492U;
 				INFOPLIST_FILE = MergePluginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.MergePluginTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.MergePluginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MergePlugin.app/Contents/MacOS/MergePlugin";
@@ -393,10 +505,42 @@
 				DEVELOPMENT_TEAM = 57Y47U492U;
 				INFOPLIST_FILE = MergePluginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.MergePluginTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.MergePluginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MergePlugin.app/Contents/MacOS/MergePlugin";
+			};
+			name = Release;
+		};
+		A8678A6520523AF3007EE1B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ConflictResolver/ConflictResolver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ConflictResolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.MergePlugin.ConflictResolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A8678A6620523AF3007EE1B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ConflictResolver/ConflictResolver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ConflictResolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.MergePlugin.ConflictResolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -426,6 +570,15 @@
 			buildConfigurations = (
 				A8678A5020523ABD007EE1B2 /* Debug */,
 				A8678A5120523ABD007EE1B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8678A6420523AF3007EE1B2 /* Build configuration list for PBXNativeTarget "ConflictResolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8678A6520523AF3007EE1B2 /* Debug */,
+				A8678A6620523AF3007EE1B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
