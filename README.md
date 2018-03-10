@@ -12,6 +12,7 @@ Conflict Resolver
 
 - [x] There are three options, namely 'Accept theirs', 'Accept Yours', and 'Keep Both'. Only one click and it will make the change for you automatically.
 - [x] Jump to next conflict.
+- [x] Git diff3 style supported.
 
 ## How to install
 
